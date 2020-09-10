@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+ /* リセットCSS */
+
+html, body, h1, h2, h3, h4, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td figure{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align:baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article, header, footer, aside, figure, figcaption, nav, section {
+  display:block;
+}
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+ol, ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+
+html {
+  font-size: 62.5%; /* 16px x 62.5% = 10PX */
+}
+
+body {
+  color: #333;
+  font-family: 'Open Sans','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-size: 2.4rem;
+}
+
+/* メインビジュアル */
+
+img {
+  /* margin: 8px; */
+  max-width: 100%;
+}
+
+
+.site-title a{
+  display: fixed;
+  font-size: 8rem;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 16px;
+  /* right: 700px; */
+  text-decoration: none;
+}
+
+
+.inner-wrapper {
+  width: 110rem;
+  margin: auto;
+}
+
+/* ナビゲーション */
+
+.nav{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+ul .inner-wrapper{
+  text-align: center;
+  margin: 16px;
+}
+
+.nav li {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.en {
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  text-align: center;
+  /* margin:8px 0 -48px; */
+  justify-content: space-between;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-s {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16.6%;
+}
+
+li a {
+  text-align: center;
+  display: table;
+  width: 100%;
+  margin: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+li>a.span {
+  display: block;
+  text-transform: uppercase;
+}
+
+span {
+  color: #333;
+  font-weight: bold;
+}
+
+li + li {
+  border-left: 1px solid #333;
+}
+
+/* サービス情報 */
+/* .index_img {
+  margin: 32px 32px;
+} */
+
+.osouji_index h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  margin: 16px;
+  padding: 8px;
+ }
+
+.osouji_index p{
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin: 8px;
+  padding: 16px 40px;
+ }
+
+ /* .index_img {
+   margin: 8px;
+   width: 50%;
+   height: 50%;
+   object-position: left;
+ } */
+
+.oryouri_index h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  margin: 16px;
+  padding: 8px;
+}
+
+.oryouri_index p {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin: 8px;
+  padding: 16px;
+}
+
+
+
+hr {
+   height: 32px;
+   background-color: rgb(247, 231, 233);
+   width: 100%;
+   border: none;
+   margin: 0 0 8px 0;
+ }
+
+.s-container {
+    display: flex;
+  }
+.caption_box {
+   display:;
+   background-color: bisque;
+   width: 490px;
+   height: 100%;
+   /* margin: 8px 32px; */
+   padding: 8px 32px;
+   border-radius: 8px;
+ }
+
+.caption_box image {
+  position: relative;
+  width: 100%;
+  padding: 75%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+.caption_box h2 {
+   font-size: 24px;
+   font-weight: bold;
+   margin: 8px;
+   padding: 8px;
+ }
+
+.caption_box p {
+   font-size: 18px;
+   line-height: 1.7;
+   text-align: left;
+   margin: 8px;
+   padding: 8px;
+}
+
+a.button01 {
+  width: 240px;
+  height: 48px;
+    padding: 0.5em;
+  font-size: 18px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(239, 243, 7, 0.418);
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.button01 :hover {
+    background-color: #f9c500;
+  }
+
+a.cp_btn:active {
+  border-bottom: 2px solid #26C6DA;
+  box-shadow: 0 0 2px rgba(48, 45, 45, 0);
+}
+
+.btn_wrapper {
+  display: inline-block;
+}
+
+.customer-voice {
+  display: inline-flex;
+}
+
+.customer-voice h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+aside {
+    width: 1100px;
+    margin: 0 auto;
+}
+.customer-voice p {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+}
+
+
+
+.footer-container {
+  width: 100%;
+  height: 120px;
+  background-color: #333;
+  text-align: center;
+  padding: 50px;
+}
+
+.service-area h2{
+  font-size: 32px;
+  font-weight: bold;
+  margin: 8px;
+  padding: 8px;
+  text-align: center;
+
+}
+
+.map {
+  text-align: center;
+  background-color: rgb(65, 62, 62);
+}
+
+footer {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
